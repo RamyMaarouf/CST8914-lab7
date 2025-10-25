@@ -30,11 +30,14 @@
     <form>
         <div class="control">
           <label for="name">Full name <span class="required">*</span></label><input id="name" name="name" type="text" aria-required="true" />
-            <!-- 1. I added "for="name" to link the label. Added "aria-required="true"" to annouce the requirmeent to screen readers. -->
+            <!-- 1. I added for="name" to link the label, and aria-required="true" to announce the requirement to screen readers. -->
         </div>
         <div class="control">
-          <label>Biography</label><textarea id="biography" name="biography" type="text"></textarea>
-          <span>Include examples on your skills in JavaScript.</span>
+            <br>
+            <label for="biography">Biography</label> <br> 
+            <textarea id="biography" name="biography" type="text" aria-describedby="biography_hint"></textarea>
+            <span id="biography_hint">Include examples on your skills in JavaScript.</span>
+            <!-- 2. I added for="biography" to link the label, id="biography_hint", and aria-describedby to associate the instruction text with the field. -->
         </div>
         
           <div>Gender</div>
@@ -135,4 +138,5 @@
                 
         </body>
       </html>
+
 
