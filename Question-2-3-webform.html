@@ -39,15 +39,16 @@
             <span id="biography_hint">Include examples on your skills in JavaScript.</span>
             <!-- 2. I added for="biography" to link the label, id="biography_hint", and aria-describedby to associate the instruction text with the field. -->
         </div>
-        
-          <div>Gender</div>
-          <div class="control">
-            <input id="gender_male" name="gender" type="radio" value="male" /><label>Male</label>
-          </div>
-          <div class="control">
-            <input id="gender_female" name="gender" type="radio" value="female" /><label>Female</label>
-          </div>
-        
+            <fieldset> <br>
+                <legend>Gender <span class="required">*</span></legend>
+                <div class="control">
+                    <input id="gender_male" name="gender" type="radio" value="male" /><label for="gender_male">Male</label>
+                </div>
+                <div class="control">
+                    <input id="gender_female" name="gender" type="radio" value="female" /><label for="gender_female">Female</label>
+                </div>
+            </fieldset>
+            <!-- 3. I added <fieldset> and <legend> to group the radio buttons and provide an accessible group label, and for attributes, to link the individual labels. -->
         <div class="control">
           <input id="accept_agbs" name="accept_agbs" type="checkbox" value="1" /><label>I accept the terms and conditions</label>
         </div>
@@ -138,5 +139,6 @@
                 
         </body>
       </html>
+
 
 
