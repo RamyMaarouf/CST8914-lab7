@@ -29,7 +29,8 @@
         <h1>Feedback form</h1>
     <form>
         <div class="control">
-          <label>Full name <span class="required">*</span></label><input id="name" name="name" type="text" />
+          <label for="name">Full name <span class="required">*</span></label><input id="name" name="name" type="text" aria-required="true" />
+            <!-- 1. I added "for="name" to link the label. Added "aria-required="true"" to annouce the requirmeent to screen readers. -->
         </div>
         <div class="control">
           <label>Biography</label><textarea id="biography" name="biography" type="text"></textarea>
@@ -134,3 +135,4 @@
                 
         </body>
       </html>
+
