@@ -25,7 +25,7 @@ a{
   color: #006b3a;
 }
 main a{
-  /* Removed 'outline: none;' to ensure a visible focus indicator for keyboard users */
+  /* Removed 'outline: none;', to ensure a visible focus indicator for keyboard users. */
 }
 h2 {
   margin-top: 0;
@@ -206,7 +206,7 @@ article p {
         <a href="#">Home</a>
         <a href="#">Politics</a>
                 <a href="#">Business</a>
-              <!-- Removed tabindex="-1" since it is making keyboard navigation order inaccessible -->
+              <!-- Removed tabindex="-1", since it is making keyboard navigation order inaccessible. -->
         <a href="#">Entertainment</a>
         <a href="#">Sports</a>
         <a href="#" class="btn-search pull-right"><img src="https://raw.githubusercontent.com/udacity/ud891/2de2a0688c68809a3b453db3a24b1a59e8401459/lesson2-focus/02-dom-order/images/search.svg" alt="Search" />Search</a> 
@@ -219,6 +219,7 @@ article p {
       <h3>Like the Funion? Consider joining our newsletter!</h3>
       <input type="text">
             <button type="button" onclick="getFocus()">Sign up</button>
+            <!-- Changed the event handler from "onfocus" (opens a new window immediately when a user tabs to the button) to "onclick" (opens a new window upon activation only). -->
     </div>
   </div>
   <main class="container">
@@ -239,6 +240,7 @@ article p {
       <div class="column">
         <div class="tier-header">
                     <h2>In the news</h2>
+                    <!-- Removed tabindex="0", to ensure that the keyboard focus moves logically between the correct elements of the page. -->
         </div>
         <article>
           <h3 class="headline">Bee wonders if maybe everyone else is a drone and he's the only one who has it "figured out."</h3>
@@ -295,6 +297,7 @@ article p {
 </body>
 
 </html>
+
 
 
 
